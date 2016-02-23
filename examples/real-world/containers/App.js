@@ -11,6 +11,7 @@ class App extends Component {
     this.handleDismissClick = this.handleDismissClick.bind(this)
   }
 
+  // 取消错误提示
   handleDismissClick(e) {
     this.props.resetErrorMessage()
     e.preventDefault()
@@ -38,6 +39,7 @@ class App extends Component {
     )
   }
 
+  // 如何定义App呢?
   render() {
     const { children, inputValue } = this.props
     return (

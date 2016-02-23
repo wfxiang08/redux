@@ -27,6 +27,9 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
+// TODO List需要有什么交互呢?
+// 控制内部的表示层， TodoList，设置它的props: mapStateToProps
+// onTodoClick 这个如何工作呢?
 const VisibleTodoList = connect(
   mapStateToProps,
   mapDispatchToProps

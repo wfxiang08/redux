@@ -19,6 +19,7 @@ const todo = (state, action) => {
   }
 }
 
+// reducer 函数: 归纳，状态转移
 const todos = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
@@ -30,6 +31,7 @@ const todos = (state = [], action) => {
       return state.map(t =>
         todo(t, action)
       )
+    // 这个 default 非常关键
     default:
       return state
   }

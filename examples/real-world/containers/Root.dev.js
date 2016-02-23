@@ -1,4 +1,6 @@
+// 如何导入不同的属性呢?
 import React, { Component, PropTypes } from 'react'
+
 import { Provider } from 'react-redux'
 import routes from '../routes'
 import DevTools from './DevTools'
@@ -18,6 +20,7 @@ export default class Root extends Component {
   }
 }
 
+// 两种不同的Class的定义方法
 Root.propTypes = {
   store: PropTypes.object.isRequired
 }

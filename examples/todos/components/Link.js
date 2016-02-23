@@ -1,5 +1,8 @@
 import React, { PropTypes } from 'react'
 
+
+// 没有状态的React组件
+// Lamda函数的使用
 const Link = ({ active, children, onClick }) => {
   if (active) {
     return <span>{children}</span>
@@ -17,6 +20,8 @@ const Link = ({ active, children, onClick }) => {
   )
 }
 
+
+// 在其他地方定义: propTypes
 Link.propTypes = {
   active: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
